@@ -6,7 +6,7 @@ def get_hex_bsp_version(bsp_version):
     verparts = bsp_version.split('.')
     return hex(int(verparts[0])<<16 | int(verparts[1])<<8 | int(verparts[2]))
 
-BSP_VERSION32 = "${@get_hex_bsp_version(d.getVar('L4T_VERSION'))}"
+BSP_VERSION32 = "${@get_hex_bsp_version('35.8.0')}"
 
 PYTHON_BASETOOLS = "${RECIPE_SYSROOT_NATIVE}/usr/bin/edk2-BaseTools/Source/Python"
 

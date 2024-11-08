@@ -54,7 +54,7 @@ def nvidia_edk2_packages_path(d):
 
 PACKAGES_PATH = "${@nvidia_edk2_packages_path(d)}"
 
-EDK2_EXTRA_BUILD = '-D "BUILDID_STRING=v${PV}" -D "BUILD_DATE_TIME=${@format_build_date(d)}" -D "BUILD_PROJECT_TYPE=EDK2" -D "GENFW_FLAGS=--zero"'
+EDK2_EXTRA_BUILD = '-D "BUILDID_STRING=v35.8.0" -D "BUILD_DATE_TIME=${@format_build_date(d)}" -D "BUILD_PROJECT_TYPE=EDK2" -D "GENFW_FLAGS=--zero"'
 
 def format_build_date(d):
     import datetime
